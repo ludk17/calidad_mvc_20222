@@ -63,7 +63,7 @@ public class UserControllerTest
         var controller = new UserController(repositoryMock.Object); 
 
         var user = controller.Create(userSetup); 
-        Assert.IsNotNull(user);
+        Assert.IsNull(user);
         Assert.AreEqual(user, userSetup); 
     }
 }
